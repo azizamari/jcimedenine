@@ -8,22 +8,12 @@ html{
   scroll-behavior: smooth !important;
 }
 
-/* .navbar {
-  padding-top: 5px !important;
-  padding-bottom: 5px !important;
-  min-height: 70px !important;
-}
-.nav-item {
-  color: #2F2F2F !important;
-  padding:0px 25px !important;
-} */
-
 .hero{
   width: 100%; 
   height: 100vh;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(150deg,rgba(34, 34, 34,0.5),rgba(34, 34, 34,0.5)),url("./background.jpg") no-repeat center center fixed;
+  background: linear-gradient(150deg,rgba(34, 34, 34,0.5),rgba(34, 34, 34,0.5)),url("./background.png") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
