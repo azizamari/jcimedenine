@@ -295,8 +295,8 @@ font-size: 1rem;
 }
 
 .footer a:hover {
-text-decoration:none;
-font-weight: bold;
+  text-decoration:none;
+  font-weight: 400;
 }
 .supportLi h4 {
 font-size: 20px;
@@ -326,6 +326,9 @@ padding-bottom: 10px;
   color: #FAFAFA;
   text-decoration:none;
   font-weight: bold;
+}
+.emal{
+  font-size:1rem;
 }
 
 
@@ -395,6 +398,11 @@ padding-bottom: 10px;
   }
   .activities >h4{
     font-size: 1.3rem;
+  }
+}
+@media (max-width:300px){
+  .emal{
+    font-size: 5vw;
   }
 }
 
