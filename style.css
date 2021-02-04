@@ -13,7 +13,7 @@ html{
   height: 100vh;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(150deg,rgba(34, 34, 34,0.5),rgba(34, 34, 34,0.5)),url("./background.png") no-repeat center center fixed;
+  background: linear-gradient(150deg,rgba(34, 34, 34,0.5),rgba(34, 34, 34,0.5)),url("./background.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -93,9 +93,6 @@ html{
 /* about */
 
 /* bureau */
-/* .bureau{
-  padding-top: 4rem;
-} */
 .bureau > h3{
   color: #2F2F2F;
   font-family: helvetica;
@@ -120,9 +117,9 @@ html{
   box-shadow: initial;
 }
 /* bureau */
-
+/* media */
 .media{
-  background-color:#FAFAFA;
+  background-color:#fff;
   display: flex;
   flex-direction: column;
   height:35vh;
@@ -139,7 +136,7 @@ html{
 }
 
 .blank{
-  background-color:#FAFAFA;
+  background-color:#fff;
   height:20vh;
 }
 
@@ -147,10 +144,45 @@ html{
   top:20%;
   width: 80%;
 }
+/* media */
+/* activite */
+.activities{
+  background-color:#FAFAFA;
+  display: flex;
+  flex-direction: column;
+  height:100vh;
+  z-index: 2 !important;
+}
 
+.activities > h3{
+  color: #2F2F2F;
+  font-family: helvetica;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  margin-top:3.5rem;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.activities > h4{
+  font-size: 1.5rem;
+  color: #2F2F2F;
+  text-align: center;
+}
+.activities >h4>a>button{
+  margin-left: 0.5rem;
+  background-color:#03a9f4 !important;
+}
+
+.glider-contain2{
+  width: 80%;
+  margin: auto;
+}
+/* act */
 /* map */
 .map-section{
   height: 120vh;
+  background-color: #FAFAFA;
   display: flex;
   flex-direction: column;
 }
@@ -356,6 +388,12 @@ padding-bottom: 10px;
   }
   .about{
     padding:0 5%;
+  }
+  .activities >h3{
+    font-size: 1.8rem;
+  }
+  .activities >h4{
+    font-size: 1.3rem;
   }
 }
 

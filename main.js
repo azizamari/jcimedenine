@@ -53,6 +53,35 @@ new Glider(document.querySelector('.glider'), {
   ]
 });
 
+new Glider(document.querySelector('.glider2'), {
+  slidesToShow: 1,
+  dots: '.dots2',
+  draggable: true,
+  // arrows: {
+  //   prev: '.glider-prev2',
+  //   next: '.glider-next2'
+  // },
+  responsive: [
+    {
+      breakpoint: 775,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        itemWidth: 150,
+        duration: 0.25
+      }
+    },{
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        itemWidth: 150,
+        duration: 0.25
+      }
+    }
+  ]
+});
+
 var mymap = L.map('mapid').setView([33.3528508,10.4813842], 18);
 googleHybrid = L.tileLayer('http://{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}',{
     maxZoom: 20,
