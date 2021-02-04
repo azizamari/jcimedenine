@@ -64,7 +64,7 @@ html{
 .about{
   text-align:center;
   font-family: helvetica;
-  height:140vh;
+  height:160vh;
   background-color: #FAFAFA;
   padding:0 20%;
 }
@@ -330,6 +330,9 @@ padding-bottom: 10px;
 .emal{
   font-size:1rem;
 }
+.copyright{
+  font-size:1rem;
+}
 
 
 
@@ -368,6 +371,9 @@ padding-bottom: 10px;
   .about>p{
     font-size:1rem;
   }
+  .about{
+    height:160vh;
+  }
 }
 
 
@@ -398,6 +404,17 @@ padding-bottom: 10px;
   }
   .activities >h4{
     font-size: 1.3rem;
+  }
+  .about{
+    height:130vh;
+  }
+  .copyright{
+    font-size:0.5rem;
+  }
+}
+@media (max-width:500px){
+  .about{
+    height:150vh;
   }
 }
 @media (max-width:300px){
