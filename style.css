@@ -150,7 +150,7 @@ html{
   background-color:#FAFAFA;
   display: flex;
   flex-direction: column;
-  height:100vh;
+  height:85vh;
   z-index: 2 !important;
 }
 
@@ -176,12 +176,13 @@ html{
 
 .glider-contain2{
   width: 80%;
-  margin: auto;
+  margin-left:auto;
+  margin-right: auto;
 }
 /* act */
 /* map */
 .map-section{
-  height: 120vh;
+  height: 80vh;
   background-color: #FAFAFA;
   display: flex;
   flex-direction: column;
