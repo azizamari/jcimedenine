@@ -116,6 +116,15 @@ html{
   transform: initial;
   box-shadow: initial;
 }
+.card-body > h5{
+  font-size: 1rem;
+}
+.card-body > h6{
+  font-size: 1rem;
+}
+.card-body > p{
+  font-size: 0.8rem;
+}
 /* bureau */
 /* media */
 .media{
@@ -373,6 +382,15 @@ padding-bottom: 10px;
   }
   .about{
     height:160vh;
+  }
+}
+
+@media (max-width:992px){
+  .card-body > h6{
+    font-size: 0.82rem;
+  }
+  .card-body > p{
+    font-size: 0.67rem;
   }
 }
 
