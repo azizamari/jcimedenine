@@ -93,7 +93,7 @@ var redMarker = L.AwesomeMarkers.icon({
   markerColor: 'red',
   prefix: 'fa',
 });
-L.marker([33.3528508,10.4813842], {icon: redMarker}).addTo(mymap).bindPopup("<b>Notre Locale</b><br>route gabes 1KM.").openPopup();
+L.marker([33.3528508,10.4813842], {icon: redMarker}).addTo(mymap).bindPopup("<b>Notre Locale</b><br>route gabes 1Km.").openPopup();
 
 window.addEventListener('load', (event) => {
   if(document.body.clientWidth<=580){
