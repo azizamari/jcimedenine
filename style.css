@@ -13,7 +13,7 @@ html{
   height: 100vh;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(150deg,rgba(34, 34, 34,0.5),rgba(34, 34, 34,0.5)),url("./background.jpg") no-repeat center center fixed;
+  background: url("./background.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -325,8 +325,6 @@ box-shadow: 0 1px 0 #B4B3B3;
 
 
 .footer-bottom {
-margin-top: 2em;
-border-top: 1px solid #DDDDDD;
 padding-top: 20px;
 padding-bottom: 10px;
 }
@@ -436,6 +434,9 @@ padding-bottom: 10px;
 @media (max-width:500px){
   .about{
     height:150vh;
+  }
+  .activities{
+    height:65vh;
   }
 }
 @media (max-width:300px){
