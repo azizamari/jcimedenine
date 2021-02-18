@@ -188,6 +188,9 @@ html{
   margin-left:auto;
   margin-right: auto;
 }
+.glider2  img{
+  margin: 25px;
+}
 /* act */
 /* map */
 .map-section{
