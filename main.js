@@ -97,7 +97,7 @@ L.marker([33.3528508,10.4813842], {icon: redMarker}).addTo(mymap).bindPopup("<b>
 
 window.addEventListener('load', (event) => {
   if(document.body.clientWidth<=580){
-    $('#card1').html('<img src="assets/bureau2.png" class="card-img-top" alt="..."> <div class="card-body"> <h5 class="card-title">Aymen Ounis</h5> <h6>Président</h6> <p class="card-text">ounisaymen403@gmail.com</p> </div>');
-    $('#card2').html('<img src="assets/bureau3.png" class="card-img-top" alt="..." > <div class="card-body"> <h5 class="card-title">Haythem Yahyaoui</h5> <h6>Vice Président - VPPRE</h6> <p class="card-text">haithem717@gmail.com</p> </div>');
+    $('#card1').html('<img src="assets/bureau2.jpg" class="card-img-top" alt="..."> <div class="card-body"> <h5 class="card-title">Aymen Ounis</h5> <h6>Président</h6> <p class="card-text">ounisaymen403@gmail.com</p> </div>');
+    $('#card2').html('<img src="assets/bureau3.jpg" class="card-img-top" alt="..." > <div class="card-body"> <h5 class="card-title">Haythem Yahyaoui</h5> <h6>Vice Président - VPPRE</h6> <p class="card-text">haithem717@gmail.com</p> </div>');
   }
 });
