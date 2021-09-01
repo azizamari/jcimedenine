@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JCI Medenine - RNP</title>
+</head>
+<body>
+    <form method="POST" action="/rnp">
+        <label for="nom">Nom:</label>
+        <input type="text" name="nom" required>
+        <br>
+        <label for="prenom">Prénom:</label>
+        <input type="text" name="prenom" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="text" name="email" required>
+        <br>        
+        <label for="olm">OLM:</label>
+        <input type="text" name="olm" required >
+        <br>
+        <label for="quality">Qualité:</label>
+        <input type="text" name="quality" required>
+        <br>        
+        <label for="recu">Reçu Edinar:</label>
+        <input type="file" name="recu" required>
+        <br>
+        <input type="radio" value="vsd" name="stay" required>
+        <input type="radio" value="sd" name="stay" required>
+        <input type="radio" value="simple" name="stay" required>
+        <input type="submit" value="register">
+    </form>
+</body>
+</html>
