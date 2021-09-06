@@ -1,40 +1,848 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JCI Medenine - RNP</title>
-</head>
-<body>
-    <form method="POST" action="/rnp">
-        <label for="nom">Nom:</label>
-        <input type="text" name="nom" required>
-        <br>
-        <label for="prenom">Prénom:</label>
-        <input type="text" name="prenom" required>
-        <br>
-        <label for="email">Email:</label>
-        <input type="text" name="email" required>
-        <br>     
-        <label for="numTel">Numéro de Téléphone:</label>
-        <input type="text" name="numTel" required>
-        <br>         
-        <label for="olm">OLM:</label>
-        <input type="text" name="olm" required >
-        <br>
-        <label for="quality">Qualité:</label>
-        <input type="text" name="quality" required>
-        <br>        
-        <label for="recu">Reçu Edinar:</label>
-        <input type="file" name="recu" required>
-        <br>
-        Inscription:
-        VSD <input type="radio" value="vsd" name="stay" required>
-        SD <input type="radio" value="sd" name="stay" required>
-        Simple<input type="radio" value="simple" name="stay" required>
-        <br>
-        <input type="submit" value="register">
-    </form>
-</body>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Grand - Event and Conference Template</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" >
+    <!-- Icon -->
+    <link rel="stylesheet" type="text/css" href="assets/fonts/line-icons.css">
+    <!-- Slicknav -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slicknav.css">
+    <!-- Nivo Lightbox -->
+    <link rel="stylesheet" type="text/css" href="assets/css/nivo-lightbox.css" >
+    <!-- Animate -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <!-- Responsive Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
+  </head>
+  <body>
+
+    <!-- Header Area wrapper Starts -->
+    <header id="header-wrap">
+      <!-- Navbar Start -->
+      <nav class="navbar navbar-expand-lg fixed-top top-nav-collapse">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              <span class="icon-menu"></span>
+              <span class="icon-menu"></span>
+              <span class="icon-menu"></span>
+            </button>
+            <a href="/rnp.html" class="navbar-brand"><img src="./logo.png" alt=""></a>
+          </div>
+          <div class="collapse navbar-collapse" id="main-navbar">
+            <ul class="navbar-nav mr-auto w-100 justify-content-end">
+              <li class="nav-item active">
+                <a class="nav-link" href="#header-wrap">
+                  Accueil
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">
+                  About
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#schedules">
+                  Programme
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#team">
+                  Equipe
+                </a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#faq">
+                  Faq
+                </a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="#sponsors">
+                  Sponsors
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#google-map-area">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Mobile Menu Start -->
+        <ul class="mobile-menu">
+          <li>
+            <a class="page-scrool" href="#header-wrap">Acceuil</a>
+          </li>
+          <li>
+            <a class="page-scrool" href="#about">A Propos</a>
+          </li>
+          <li>
+             <a class="page-scroll" href="#schedules">Programme</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#team">Equipe</a>
+          </li>
+          <!-- <li>
+            <a class="page-scroll" href="#faq">Faq</a>
+          </li> -->
+          <li>
+            <a class="page-scroll" href="#sponsors">Sponsors</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#google-map-area">Contact</a>
+          </li>
+        </ul>
+        <!-- Mobile Menu End -->
+
+      </nav>
+      <!-- Navbar End -->
+      <div class="hero"></div>
+
+      <!-- Main Carousel Section Start -->
+      <!-- <div id="main-slide" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="assets/img/slider/slide1.jpg" alt="First slide">
+            <div class="carousel-caption d-md-block">
+              <p class="fadeInUp wow" data-wow-delay=".6s">2ème Réunion Nationale des Présidents JCET 2021</p>
+              <h1 class="wow fadeInDown heading" data-wow-delay=".4s">Design Thinking Conference</h1>
+              <a href="#" class="fadeInLeft wow btn btn-common btn-lg" data-wow-delay=".6s">Get Ticket</a>
+              <a href="#" class="fadeInRight wow btn btn-border btn-lg" data-wow-delay=".6s">Explore More</a>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <!-- Main Carousel Section End -->
+
+    </header>
+    <!-- Header Area wrapper End -->
+
+    <!-- Coundown Section Start -->
+    <section class="countdown-timer section-padding">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="heading-count">
+              <h2 class="wow fadeInDown" data-wow-delay="0.2s">L'événement commencera dans
+            </h2>
+            </div>
+          </div>
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="row time-countdown justify-content-center wow fadeInUp" data-wow-delay="0.2s">
+              <div id="clock" class="time-count"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Coundown Section End -->    
+
+    <!-- About Section Start -->
+    <section id="about" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title-header text-center">
+              <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">à propos de cet événement</h1>
+              <p class="wow fadeInDown" data-wow-delay="0.2s">2ème Réunion Nationale des Présidents JCET 2021</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-md-6 col-lg-4">
+            <div class="about-item">
+              <img class="img-fluid" src="assets/img/about/img1.jpg" alt="">
+              <div class="about-text">
+                <h3><a href="#">Wanna Know Our Mission?</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer commodo ligula eget dolor.</p>
+                <a class="btn btn-common btn-rm" href="#">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-4">
+            <div class="about-item">
+              <img class="img-fluid" src="assets/img/about/img2.jpg" alt="">
+              <div class="about-text">
+                <h3><a href="#">What you will learn?</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer commodo ligula eget dolor.</p>
+                <a class="btn btn-common btn-rm" href="#">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-4">
+            <div class="about-item">
+              <img class="img-fluid" src="assets/img/about/img3.jpg" alt="">
+              <div class="about-text">
+                <h3><a href="#">What are the benifits?</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer commodo ligula eget dolor.</p>
+                <a class="btn btn-common btn-rm" href="#">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Counter Area Start-->
+    <section class="counter-section section-padding">
+      <div class="container">
+        <div class="row">
+          <!-- Counter Item -->
+          <div class="col-md-6 col-lg-3 col-xs-12 work-counter-widget text-center">
+            <div class="counter wow fadeInRight" data-wow-delay="0.3s">
+              <div class="icon"><i class="lni-map"></i></div>
+              <p>Hotel Vincci Djerba Resort</p>
+              <span>Medenine, Djerba</span>
+            </div>
+          </div>
+          <!-- Counter Item -->
+          <div class="col-md-6 col-lg-3 col-xs-12 work-counter-widget text-center">
+            <div class="counter wow fadeInRight" data-wow-delay="0.6s">
+              <div class="icon"><i class="lni-timer"></i></div>
+              <p>Septembre 24 - 26, 2021</p>
+            </div>
+          </div>
+          <!-- Counter Item -->
+          <div class="col-md-6 col-lg-3 col-xs-12 work-counter-widget text-center">
+            <div class="counter wow fadeInRight" data-wow-delay="0.9s">
+              <div class="icon"><i class="lni-users"></i></div>
+              <p>soyez le bienvenu</p>       
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Counter Area End-->
+
+    <!-- Schedule Section Start -->
+    <section id="schedules" class="schedule section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title-header text-center">
+              <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">Programme</h1>
+              <p class="wow fadeInDown" data-wow-delay="0.2s">Programme du 2éme RNP</p>
+            </div>
+          </div>
+        </div>
+        <div class="schedule-area row wow fadeInDown" data-wow-delay="0.3s">
+          <div class="schedule-tab-title col-md-3 col-lg-3 col-xs-12">
+            <div class="table-responsive">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="monday-tab" data-toggle="tab" href="#monday" role="tab" aria-controls="monday" aria-expanded="true">
+                    <div class="item-text">
+                      <h4>Vendredi</h4>
+                      <h5>24 Septembre</h5>
+                    </div>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="tuesday-tab" data-toggle="tab" href="#tuesday" role="tab" aria-controls="tuesday">
+                    <div class="item-text">
+                      <h4>Samedi</h4>
+                      <h5>25 Septembre</h5>
+                    </div>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="wednesday-tab" data-toggle="tab" href="#wednesday" role="tab" aria-controls="wednesday">
+                    <div class="item-text">
+                      <h4>Dimanche</h4>
+                      <h5>26 Septembre</h5>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="schedule-tab-content col-md-9 col-lg-9 col-xs-12 clearfix">
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="monday" role="tabpanel" aria-labelledby="monday-tab">
+                <div id="accordion">
+                  <div class="card">
+                    <div id="headingOne">
+                      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <!-- <div class="images-box">
+                          <img class="img-fluid" src="assets/img/speaker/speakers-1.jpg" alt="">
+                        </div>                      -->
+                        <span class="time">10H</span>
+                        <h4>Accueil</h4>
+                        <!-- <h5 class="name">David Warner</h5> -->
+                      </div>
+                    </div>
+                    <!-- <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                      <div class="card-body">
+                        <p>Consectetur adipisicing elit. Quod distinctio impedit sint accusantium ducimus lites consequuntur innobisl dolores saepe.Proin sit amet turpis lobortis.</p>
+                        <div class="location">
+                          <span>Location:</span> Hall 1 , Building A, Golden Street, Southafrica
+                        </div>
+                      </div>
+                    </div> -->
+                  </div>
+                  <div class="card">
+                    <div id="headingTwo">
+                      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">                  
+                        <span class="time">15H</span>
+                        <h4>Cérémonie d'ouverture</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div id="headingThree">
+                      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">                     
+                        <span class="time">16H</span>
+                        <h4>Formation des participants</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div id="headingThree">
+                      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">                
+                        <span class="time">16H</span>
+                        <h4>Formations pour les candidats aux postes électifs</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div id="headingThree">
+                      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">                
+                        <span class="time">17H</span>
+                        <h4>Réunion des structures</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div id="headingThree">
+                      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">                    
+                        <span class="time">20H</span>
+                        <h4>Diner</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div id="headingThree">
+                      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">                    
+                        <span class="time">24H</span>
+                        <h4>Comité de candidature</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div id="headingThree">
+                      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">                 
+                        <span class="time">23H</span>
+                        <h4>Réunion du Bureau National Directeur de la JCET</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="tuesday" role="tabpanel" aria-labelledby="tuesday-tab">
+                <div id="accordion2">
+                  <div class="card">
+                    <div id="headingOne1">
+                      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseOne1" aria-expanded="false" aria-controls="collapseOne1">                  
+                        <span class="time">7h</span>
+                        <h4>Petit Déjeuner</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div id="headingOne1">
+                      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseOne1" aria-expanded="false" aria-controls="collapseOne1">                  
+                        <span class="time">8h</span>
+                        <h4>Accueil</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div id="headingTwo2">
+                      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">                   
+                        <span class="time">9h à 12h</span>
+                        <h4>Séminaire sur le thème national</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div id="headingTwo2">
+                      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">                   
+                        <span class="time">12h</span>
+                        <h4>Déjeuner</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div id="headingTwo2">
+                      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">                   
+                        <span class="time">15h à 20h</span>
+                        <h4>Assemblée générale (1ère partie)</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div id="headingTwo2">
+                      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">                   
+                        <span class="time">20h</span>
+                        <h4>Diner</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div id="headingTwo2">
+                      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">                   
+                        <span class="time">22h</span>
+                        <h4>Soirée</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="wednesday" role="tabpanel" aria-labelledby="wednesday-tab">
+                <div id="accordion3">
+                  <div class="card">
+                    <div id="headingOne3">
+                      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseOne3" aria-expanded="false" aria-controls="collapseOne3">    
+                        <span class="time">7h</span>
+                        <h4>Petit Déjeuner</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div id="headingTwo3">
+                      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseTwo3" aria-expanded="false" aria-controls="collapseTwo3">                  
+                        <span class="time">9h à 12h</span>
+                        <h4>Assemblée générale (2éme partie)</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="friday" role="tabpanel" aria-labelledby="friday-tab">
+                <div id="accordion">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Schedule Section End -->
+
+    <!-- Team Section Start -->
+    <section id="team" class="section-padding text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title-header text-center">
+              <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">Equipe</h1>
+              <p class="wow fadeInDown" data-wow-delay="0.2s">2ème Réunion Nationale des Présidents JCET 2021</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-md-6 col-lg-4">
+            <!-- Team Item Starts -->
+            <div class="team-item wow fadeInUp" data-wow-delay="0.2s">
+              <div class="team-img">
+                <img class="img-fluid" src="assets/img/team/team-01.jpg" alt="">
+                <div class="team-overlay">
+                  <div class="overlay-social-icon text-center">
+                    <ul class="social-icons">
+                      <li><a href="#"><i class="lni-facebook-filled" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="lni-twitter-filled" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="lni-linkedin-filled" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="lni-behance" aria-hidden="true"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="info-text">
+                <h3><a href="#">JONATHON DOE</a></h3>
+                <p>Product Designer, Tesla</p>
+              </div>
+            </div>
+            <!-- Team Item Ends -->
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-4">
+            <!-- Team Item Starts -->
+            <div class="team-item wow fadeInUp" data-wow-delay="0.4s">
+              <div class="team-img">
+                <img class="img-fluid" src="assets/img/team/team-01.jpg" alt="">
+                <div class="team-overlay">
+                  <div class="overlay-social-icon text-center">
+                    <ul class="social-icons">
+                      <li><a href="#"><i class="lni-facebook-filled" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="lni-twitter-filled" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="lni-linkedin-filled" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="lni-behance" aria-hidden="true"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="info-text">
+                <h3><a href="#">Patric Green</a></h3>
+                <p>Front-end Developer, Dropbox</p>
+              </div>
+            </div>
+            <!-- Team Item Ends -->
+          </div>
+
+          <div class="col-sm-6 col-md-6 col-lg-4">
+            <!-- Team Item Starts -->
+            <div class="team-item wow fadeInUp" data-wow-delay="0.6s">
+              <div class="team-img">
+                <img class="img-fluid" src="assets/img/team/team-01.jpg" alt="">
+                <div class="team-overlay">
+                  <div class="overlay-social-icon text-center">
+                    <ul class="social-icons">
+                      <li><a href="#"><i class="lni-facebook-filled" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="lni-twitter-filled" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="lni-linkedin-filled" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="lni-behance" aria-hidden="true"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="info-text">
+                <h3><a href="#">Paul Kowalsy</a></h3>
+                <p>Lead Designer, TNW</p>
+              </div>
+            </div>
+            <!-- Team Item Ends -->
+          </div>
+
+          <div class="col-sm-6 col-md-6 col-lg-4">
+            <!-- Team Item Starts -->
+            <div class="team-item wow fadeInUp" data-wow-delay="0.8s">
+              <div class="team-img">
+                <img class="img-fluid" src="assets/img/team/team-01.jpg" alt="">
+                <div class="team-overlay">
+                  <div class="overlay-social-icon text-center">
+                    <ul class="social-icons">
+                      <li><a href="#"><i class="lni-facebook-filled" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="lni-twitter-filled" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="lni-linkedin-filled" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="lni-behance" aria-hidden="true"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="info-text">
+                <h3><a href="#">Jhon Doe</a></h3>
+                <p>Back-end Developer, ASUS</p>
+              </div>
+            </div>
+            <!-- Team Item Ends -->
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-4">
+            <!-- Team Item Starts -->
+            <div class="team-item wow fadeInUp" data-wow-delay="1s">
+              <div class="team-img">
+                <img class="img-fluid" src="assets/img/team/team-01.jpg" alt="">
+                <div class="team-overlay">
+                  <div class="overlay-social-icon text-center">
+                    <ul class="social-icons">
+                      <li><a href="#"><i class="lni-facebook-filled" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="lni-twitter-filled" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="lni-linkedin-filled" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="lni-behance" aria-hidden="true"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="info-text">
+                <h3><a href="#">Daryl Dixon</a></h3>
+                <p>Full-stack Developer, Google</p>
+              </div>
+            </div>
+            <!-- Team Item Ends -->
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-4">
+            <!-- Team Item Starts -->
+            <div class="team-item wow fadeInUp" data-wow-delay="1.2s">
+              <div class="team-img">
+                <img class="img-fluid" src="assets/img/team/team-01.jpg" alt="">
+                <div class="team-overlay">
+                  <div class="overlay-social-icon text-center">
+                    <ul class="social-icons">
+                      <li><a href="#"><i class="lni-facebook-filled" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="lni-twitter-filled" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="lni-linkedin-filled" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="lni-behance" aria-hidden="true"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="info-text">
+                <h3><a href="#">Chris Adams</a></h3>
+                <p>UI Designer, Apple</p>
+              </div>
+            </div>
+            <!-- Team Item Ends -->
+          </div>
+        </div>
+        <a href="speakers.html" class="btn btn-common mt-30 wow fadeInUp" data-wow-delay="1.9s">All Speakers</a>
+      </div>
+    </section>
+    <!-- Team Section End -->
+
+    <!-- Ask Question Section Start -->
+    <!-- <section id="faq" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title-header text-center">
+              <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">Ask Question?</h1>
+              <p class="wow fadeInDown" data-wow-delay="0.2s">2ème Réunion Nationale des Présidents JCET 2021</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+            <div class="accordion">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <div class="header-title" data-toggle="collapse" data-target="#questionOne" aria-expanded="true" aria-controls="collapseOne">
+                    <i class="lni-pencil"></i> How to make a new event?
+                  </div>
+                </div>
+                <div id="questionOne" class="collapse" aria-labelledby="headingOne" data-parent="#question">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <div class="header-title" data-toggle="collapse" data-target="#questionTwo" aria-expanded="false" aria-controls="questionTwo">
+                      <i class="lni-pencil"></i>  Which payment methods do you accept? 
+                    </div>
+                </div>
+                <div id="questionTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#question">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <div class="header-title" data-toggle="collapse" data-target="#questionThree" aria-expanded="false" aria-controls="questionThree">
+                    <i class="lni-pencil"></i>  Which document can i bring to meeting?   
+                  </div>
+                </div>
+                <div id="questionThree" class="collapse" aria-labelledby="headingThree" data-parent="#question">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <div class="header-title" data-toggle="collapse" data-target="#questionFour" aria-expanded="false" aria-controls="questionFour">
+                   <i class="lni-pencil"></i> Who can join at the live event venue?
+                  </div>
+                </div>
+                <div id="questionFour" class="collapse" aria-labelledby="headingThree" data-parent="#question">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+            <div class="accordion">
+              <div class="card">
+                <div class="card-header" id="headingOne2">
+                  <div class="header-title" data-toggle="collapse" data-target="#questionOne2" aria-expanded="true" aria-controls="collapseOne">
+                    <i class="lni-pencil"></i> How to make a new event?
+                  </div>
+                </div>
+                <div id="questionOne2" class="collapse" aria-labelledby="headingOne" data-parent="#question">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo2">
+                    <div class="header-title" data-toggle="collapse" data-target="#questionTwo2" aria-expanded="false" aria-controls="questionTwo">
+                      <i class="lni-pencil"></i>  Which payment methods do you accept? 
+                    </div>
+                </div>
+                <div id="questionTwo2" class="collapse" aria-labelledby="headingTwo" data-parent="#question">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <div class="header-title" data-toggle="collapse" data-target="#questionFive" aria-expanded="false" aria-controls="questionFive">
+                    <i class="lni-pencil"></i>How to set price? 
+                  </div>
+                </div>
+                <div id="questionFive" class="collapse" aria-labelledby="headingThree" data-parent="#question">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <div class="header-title" data-toggle="collapse" data-target="#questionSix" aria-expanded="false" aria-controls="questionSix">
+                    <i class="lni-pencil"></i>  What our price list? 
+                  </div>
+                </div>
+                <div id="questionSix" class="collapse" aria-labelledby="headingThree" data-parent="#question">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- Ask Question Section End -->
+
+    <!-- Sponsors Section Start -->
+    <section id="sponsors" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title-header text-center">
+              <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">Sponsores</h1>
+              <p class="wow fadeInDown" data-wow-delay="0.2s">2ème Réunion Nationale des Présidents JCET 2021</p>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-30 text-center wow fadeInDown" data-wow-delay="0.3s">
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="spnsors-logo">
+              <a href="#"><img class="img-fluid" src="assets/img/sponsors/logo-01.png" alt=""></a>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="spnsors-logo">
+              <a href="#"><img class="img-fluid" src="assets/img/sponsors/logo-01.png" alt=""></a>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="spnsors-logo">
+              <a href="#"><img class="img-fluid" src="assets/img/sponsors/logo-01.png" alt=""></a>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="spnsors-logo">
+              <a href="#"><img class="img-fluid" src="assets/img/sponsors/logo-01.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Sponsors Section End -->
+
+    <!-- Footer Section Start -->
+    <footer class="footer-area section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.2s">
+            <h3><img src="./logo.png" alt="Logo Jci" width="150"></h3>
+            <p>
+              Aorem ipsum dolor sit amet elit sed lum tempor incididunt ut labore el dolore alg minim veniam quis nostrud ncididunt.
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.4s">
+            <h3>QUICK LINKS</h3>
+            <ul>
+              <li><a href="#">About Conference</a></li>
+              <li><a href="#">Our Speakers</a></li>
+              <li><a href="#">Event Shedule</a></li>
+              <li><a href="#">Latest News</a></li>
+              <li><a href="#">Event Photo Gallery</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.8s">
+            <!-- /.widget -->
+            <div class="widget">
+              <h5 class="widget-title">FOLLOW US ON</h5>
+              <ul class="footer-social">
+                <li><a class="facebook" href="https://www.facebook.com/JCIMedenine.officielle" target="_blank"><i class="lni-facebook-filled"></i></a></li>
+                <li><a class="twitter" href="https://www.instagram.com/jcimedenine/" target="blank"><i class="lni-instagram-filled"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <div id="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="site-info">
+              <p>© Designed and Developed by <a href="http://uideck.com" rel="nofollow">UIdeck</a></p>
+            </div>      
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Go to Top Link -->
+    <a href="#" class="back-to-top">
+    	<i class="lni-chevron-up"></i>
+    </a>
+
+    <div id="preloader">
+      <div class="sk-circle">
+        <div class="sk-circle1 sk-child"></div>
+        <div class="sk-circle2 sk-child"></div>
+        <div class="sk-circle3 sk-child"></div>
+        <div class="sk-circle4 sk-child"></div>
+        <div class="sk-circle5 sk-child"></div>
+        <div class="sk-circle6 sk-child"></div>
+        <div class="sk-circle7 sk-child"></div>
+        <div class="sk-circle8 sk-child"></div>
+        <div class="sk-circle9 sk-child"></div>
+        <div class="sk-circle10 sk-child"></div>
+        <div class="sk-circle11 sk-child"></div>
+        <div class="sk-circle12 sk-child"></div>
+      </div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.countdown.min.js"></script>
+    <script src="assets/js/jquery.nav.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/jquery.slicknav.js"></script>
+    <script src="assets/js/nivo-lightbox.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/form-validator.min.js"></script>
+    <script src="assets/js/contact-form-script.min.js"></script>
+    <script src="assets/js/map.js"></script>
+    <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyCsa2Mi2HqyEcEnM1urFSIGEpvualYjwwM"></script>
+      
+  </body>
 </html>
