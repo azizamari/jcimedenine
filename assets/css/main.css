@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400|Josefin+Sans:700");
 html {
   overflow-x: hidden;
+  
 }
 
 .row{
@@ -8,14 +9,25 @@ html {
 }
 .hero{
     width: 100%; 
-    height: 100vh;
+    height: 85vh;
     position: relative;
     overflow: hidden;
-    background: url("../img/slider/slide1.jpg") no-repeat center center;
+    background: url("../../background.jpg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+.carousel-caption{
+    position: absolute;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    width: 100%;
+    scroll-behavior: smooth !important;
+}
+.carousel-caption .inscrire:hover{
+    background-color:white;
 }
 body {
   background: #fff;
@@ -237,7 +249,7 @@ ul li, ol li {
 
 .btn-common:hover {
   color: #fff;
-  background: #F50057;
+  background: #028bc9;
   box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
   transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
@@ -821,6 +833,7 @@ a.back-to-top:hover, a.back-to-top:focus {
   #nav-main li a.nav-link {
     padding-top: 18px;
   }
+  
 }
 
 .navbar-toggler {
@@ -1756,11 +1769,11 @@ background: #00aced;
 }
 
 #copyright p a {
-  color: #fff;
+  color: #03a9f4;
 }
 
 #copyright p a:hover {
-  color: #03a9f4;
+  color: #fff;
 }
 
 /* ==========================================================================
@@ -1834,3 +1847,52 @@ background: #00aced;
 .time-countdown {
   margin: 15px 0px 50px 0;
 }
+
+
+/* wave */
+
+.waves {
+    position: absolute;
+    width: 100%;
+    height: 20vh;
+    margin-bottom: -7px;
+    bottom: 0;
+    left: 0;
+    /*Fix for safari gap*/
+    min-height: 100px;
+    max-height: 150px;
+  }
+  .parallax>use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+  }
+  .parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 4.6s;
+  }
+  .parallax>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 6.6s;
+  }
+  .parallax>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 8.6s;
+  }
+  .parallax>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 13.2s;
+  }
+  @keyframes move-forever {
+    0% {
+      transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+      transform: translate3d(85px, 0, 0);
+    }
+  }
+  /*Shrinking for mobile*/
+  @media (max-width: 768px) {
+    .waves {
+      height: 11vh;
+      min-height: 4 5px;
+    }
+  }
