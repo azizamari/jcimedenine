@@ -29,6 +29,9 @@ html {
 .carousel-caption .inscrire:hover{
     background-color:white;
 }
+.carousel-caption a{
+    margin: 5px 20px;
+}
 body {
   background: #fff;
   font-size: 15px;
