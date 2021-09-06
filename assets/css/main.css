@@ -18,6 +18,9 @@ html {
     -o-background-size: cover;
     background-size: cover;
 }
+#team {
+    background-color:#f3f4f3;
+}
 .carousel-caption{
     position: absolute;
     top: 60%;
