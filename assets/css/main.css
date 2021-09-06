@@ -29,9 +29,7 @@ html {
     width: 100%;
     scroll-behavior: smooth !important;
 }
-.carousel-caption .inscrire:hover{
-    background-color:white;
-}
+
 .carousel-caption a{
     margin: 5px 20px;
 }
