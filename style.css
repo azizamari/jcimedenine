@@ -103,6 +103,9 @@ html{
 /* about */
 
 /* bureau */
+.bureau{
+    background-color: #FAFAFA;
+}
 .bureau > h3{
   color: #2F2F2F;
   font-family: helvetica;
