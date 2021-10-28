@@ -82,6 +82,15 @@ html{
   padding-top: 1rem;
   font-size: 2.5rem;
 }
+.recrutement >h3{
+    color: #2F2F2F;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:1rem;
+    margin-bottom:1.5rem;
+    padding-top: 1rem;
+    font-size: 2.5rem;
+}
 .about > h4{
   font-size: 2rem;
   color: #03a9f4;
@@ -389,7 +398,12 @@ padding-bottom: 10px;
 
 
 
-
+#recrutement{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding:3rem;
+}
 
 
 .slider{
